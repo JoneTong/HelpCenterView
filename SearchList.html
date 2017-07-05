@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--离线应用的另一个技巧-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--隐藏状态栏-->
+    <title>搜索列表页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<!--header开始-->
+<div class="header">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!--logo开始-->
+			<div class="navbar-logo col-lg-2 col-md-2 col-sm-4 col-xs-6">
+				<img src="img/logo.png" alt=""/>
+			</div>
+			<!--logo结束-->
+
+
+			<button class=" visible-sm navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse-example">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-header col-lg-7 col-md-7 navbar-hidden scrollbar-hover navbar-collapse navbar-collapse-example collapse">
+				<ul class="navbar-list navbar-list-mobile clearfix ">
+					<li><a href="">导航一</a></li>
+					<li class="active"><a href="">导航二</a></li>
+					<li><a href="">导航三</a></li>
+					<li><a href="">导航四</a></li>
+					<li><a href="">导航五</a></li>
+					<li><a href="">导航六</a></li>
+				</ul>
+			</div>
+			<!-- 导航中的搜索开始-->
+			<div class="navbar-form navbar-right col-lg-3 col-md-3 col-sm-5 hidden-xs clearfix" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="搜索">
+					<label type="submit" class="btn btn-default btn-search">搜索</label>
+				</div>
+			</div>
+			<!-- 导航中的搜索结束-->
+			<!--移动端的搜索按钮开始-->
+			<button class="btn icon-search icon-2x visible-xs" data-toggle="collapse" data-target="#collapseExample"></button>
+			<div class="collapse" id="collapseExample">
+				<div class="bg-primary with-padding">
+					<div class="navbar-form navbar-right clearfix" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="搜索">
+							<label type="submit" class="btn btn-default btn-search">搜索</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--移动端的搜索按钮结束-->
+			<!--移动端用户头像预留开始-->
+			<i class="mobile-icon-user icon-user visible-xs"></i>
+			<!--移动端用户头像预留结束-->
+		</div>
+	</nav>
+</div>
+<!--header结束-->
+<!--container开始-->
+<div class="content content-min-height">
+	<div class="container">
+		<div class="left-container">
+			<nav class="menu visible-xs menu-mobile" data-ride="menu" >
+				<ul class="tree tree-menu class-menu" data-ride="tree">
+					<li class="search-item-one">
+						<a href="#">一级分类</a>
+						<ul>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul>
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul >
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="search-item-one">
+						<a href="#">一级分类</a>
+						<ul>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul>
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul >
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="search-item-one">
+						<a href="#">一级分类</a>
+						<ul>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul>
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+							<li class="search-item-two">
+								<a href="#">二级分类</a>
+								<ul >
+									<li class="search-item-three"><a href="#">三级分类1</a></li>
+									<li class="search-item-three"><a href="#">三级分类2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<button class="go-back visible-xs">返回</button>
+			</nav>
+			<div class="mask content-min-height"></div>
+		</div>
+		<div class="right-container container">
+			<div class="sliding-screen clearfix">
+			<!--搜索结果提示开始-->
+	            <div class="search-result col-lg-12 col-md-12 col-sm-12 ">
+	                <div class="search-result-container">
+	                    <p>与您提交的关键字匹配的搜索结果，共有<span class="search-result-container-number">99</span>条</p>
+	                </div>
+	            </div>
+	            <!--搜索结果提示结束-->
+	        	 
+	            <!--搜索到的列表内容开始-->
+	            <div class="search-result-list">
+	                <div class="search-result-item" onclick="window.location.href='SearchListContent.html'">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	                <hr/>
+	                <div class="search-result-item">
+	                    <div class="search-detail-title clearfix">
+	                        <h4 class="search-title">频道名称/分类名称：</h4>
+	                        <h4 class="search-title search-item-name">内容的标题文字</h4>
+	                    </div>
+	                    <p class="all-item-text ellipsis">古代墓葬的考古挖掘，考古人员识别墓主人的身份考古人员识别墓主人的身份考古人员识别墓主人的身份，主要依据墓碑及墓中出土的木椟、印章、随郊马王堆汉墓的考古挖掘过随郊马王堆汉墓的考古挖掘过
+	                        随郊马王堆汉墓的考古挖掘过</p>
+	                </div>
+	            </div>
+	            <!--搜索到的列表内容结束-->
+	            <!--PC分页器开始-->
+	            <ul class="pager hidden-xs">
+	                <li class="home-page disabled">
+	                    <a href=""><i>首页</i></a>
+	                </li>
+	                <li class="previous disabled">
+	                    <a href="">上一页</a>
+	                </li>
+	                <li class="current-page">
+	                    <a href="" class="active">1</a>
+	                </li>
+	                <li class="current-page">
+	                    <a href="">2</a>
+	                </li>
+	                <li class="next ">
+	                    <a href="">下一页</a>
+	                </li>
+	                <li class="end-page ">
+	                    <a href=""><i>尾页</i></a>
+	                </li>
+	
+	
+	            </ul>
+	            <!--PC分页器结束-->
+	            <!--移动端分页器开始-->
+	            <ul class="pager col-xs-12 visible-xs">
+	                <li class="home-page disabled float-left">
+	                    <a href=""><i>首页</i></a>
+	                </li>
+	                <li class="previous disabled float-left">
+	                    <a href="">上一页</a>
+	                </li>
+	                <li class="current-page">
+	                    <a href="">第<span class="page-number">1000000</span>页</a>
+	                </li>
+	                <li class="end-page float-right">
+	                    <a href=""><i>尾页</i></a>
+	                </li>
+	                <li class="next float-right">
+	                    <a href="">下一页</a>
+	                </li>
+	
+	            </ul>
+	            <!--移动端分页器结束-->
+	          
+	        </div>
+	
+		</div>
+	</div>
+
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container"> Copyright@2008-2017    版权所有</div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

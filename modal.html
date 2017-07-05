@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--离线应用的另一个技巧-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--隐藏状态栏-->
+    <title>nav+footer</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<!--header开始-->
+<div class="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!--logo开始-->
+            <div class="navbar-logo col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <!--logo结束-->
+
+            <!--nav内容大、中屏显示开始-->
+            <div class="navbar-header col-lg-7 col-md-7 hidden-sm hidden-xs">
+                <ul class="navbar-list clearfix">
+                    <li class="active"><a href="">首页</a></li>
+                    <li><a href="">导航一</a></li>
+                    <li><a href="">导航二</a></li>
+                    <li><a href="">导航三</a></li>
+                    <li><a href="">导航四</a></li>
+                    <li><a href="">导航五</a></li>
+                </ul>
+            </div>
+            <!--nav内容大、中屏显示结束-->
+            <!--nav内容小屏显示开始-->
+            <button class="dropdown-toggle visible-sm hidden-xs  navbar-toggle" type="button" data-toggle="dropdown" data-target=".zui-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="">首页</a></li>
+                <li><a href="">导航一</a></li>
+                <li><a href="">导航二</a></li>
+                <li><a href="">导航三</a></li>
+                <li><a href="">导航四</a></li>
+                <li><a href="">导航五</a></li>
+            </ul>
+            <!--nav内容小屏显示结束-->
+            <!-- 导航中的搜索开始-->
+            <div class="navbar-form navbar-right col-lg-3 col-md-3 col-sm-5 hidden-xs clearfix" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                    <label type="submit" class="btn btn-default">搜索</label>
+                </div>
+            </div>
+            <!-- 导航中的搜索结束-->
+        </div>
+    </nav>
+</div>
+<!--header结束-->
+<!--container开始-->
+<div class="content content-min-height">
+    <div class="container"></div>
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container"> Copyright@2008-2017    版权所有</div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>

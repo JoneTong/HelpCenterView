@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--离线应用的另一个技巧-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--隐藏状态栏-->
+    <title>搜索列表详情页</title>
+    <link rel="stylesheet" href="css/zui.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<!--header开始-->
+<div class="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!--logo开始-->
+            <div class="navbar-logo col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <!--logo结束-->
+
+
+            <button class=" visible-sm navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse-example">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header col-lg-7 col-md-7 navbar-hidden scrollbar-hover navbar-collapse navbar-collapse-example collapse">
+                <ul class="navbar-list navbar-list-mobile clearfix ">
+                    <li><a href="">导航一</a></li>
+                    <li class="active"><a href="">导航二</a></li>
+                    <li><a href="">导航三</a></li>
+                    <li><a href="">导航四</a></li>
+                    <li><a href="">导航五</a></li>
+                    <li><a href="">导航六</a></li>
+                </ul>
+            </div>
+            <!-- 导航中的搜索开始-->
+            <div class="navbar-form navbar-right col-lg-3 col-md-3 col-sm-5 hidden-xs clearfix" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                    <label type="submit" class="btn btn-default btn-search">搜索</label>
+                </div>
+            </div>
+            <!-- 导航中的搜索结束-->
+            <!--移动端的搜索按钮开始-->
+            <button class="btn icon-search icon-2x visible-xs" data-toggle="collapse" data-target="#collapseExample"></button>
+            <div class="collapse" id="collapseExample">
+                <div class="bg-primary with-padding">
+                    <div class="navbar-form navbar-right clearfix" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                            <label type="submit" class="btn btn-default btn-search">搜索</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--移动端的搜索按钮结束-->
+            <!--移动端用户头像预留开始-->
+            <i class="mobile-icon-user icon-user visible-xs"></i>
+            <!--移动端用户头像预留结束-->
+        </div>
+    </nav>
+</div>
+<!--header结束-->
+<!--container开始-->
+<div class="content content-min-height">
+	<div class="container clearfix">
+        <div class="left-container">
+            <nav class="menu col-lg-2 col-md-2 col-sm-2 menu-mobile" data-ride="menu" >
+                <ul class="tree tree-menu class-menu" data-ride="tree">
+                    <li class="search-item-one">
+                        <a href="#">一级分类</a>
+                        <ul>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul>
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul >
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="search-item-one">
+                        <a href="#">一级分类</a>
+                        <ul>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul>
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul >
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="search-item-one">
+                        <a href="#">一级分类</a>
+                        <ul>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul>
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-item-two">
+                                <a href="#">二级分类</a>
+                                <ul >
+                                    <li class="search-item-three"><a href="#">三级分类1</a></li>
+                                    <li class="search-item-three"><a href="#">三级分类2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="go-back visible-xs">返回</button>
+            </nav>
+            <div class="mask content-min-height"></div>
+        </div>
+		<div class="right-container clearfix">
+			<!--PC右侧内容区开始-->
+	        <div class="search-container-right  col-lg-9 col-md-9 col-sm-9 hidden-xs">
+	            <div class="clearfix">
+	                <!--分类面包屑开始-->
+	                <ol class="breadcrumb">
+	                    <li><a href="">导航一</a></li>
+	                    <li><a href="">一级分类</a></li>
+	                    <li><a href="">二级分类</a></li>
+	                    <li class="active">三级分类</li>
+	                </ol>
+	                <!--分类面包屑结束-->
+	                <p class="search-back-list"><button type="button" class="back-list" onclick="window.location.href='AllList.html'">返回列表</button><i class="icon-double-angle-left"></i></p>
+	            </div>
+	            <div class="search-detail">
+	                <div class="clearfix">
+	                    <h4 class="search-title">分类的内容标题名称</h4>
+	                    <p class="search-last-updata"><span>最后更新</span><span class="updata-time">2017</span></p>
+	                </div>
+	                <hr/>
+	                <div class="detail-container">
+	                    <p class="lead">一、【协议的范围】</p>
+	                    <p class="detail-container-list">1.1本协议是您与腾讯之间关于用户使用腾讯相关服务所订立的协议。“腾讯”是指腾讯公司及其相关服务可能存在的运营关联单位。
+	                        “用户”是指使用腾讯相关服务的使用人，在本协议中更多地称为“您”。</p>
+	                    <p class="detail-container-list">1.2本协议项下的服务是指腾讯向用户提供的包括但不限于即时通讯、网络媒体、互联网增值、互动娱乐、电子商务和广告等产品及服务
+	                        （以下简称“本服务”）。</p>
+	                    <p class="detail-container-list">1.3本协议内容同时包括《QQ号码规则》（链接地址：
+	                        http://zc.qq.com/chs/agreement1_chs.html）和《隐私政策》（链接地址：
+	                        http://www.qq.com/privacy.htm）,且您在使用腾讯某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，
+	                        即为本协议不可分割的组成部分，您同样应当遵守。您对前述任何业务规则、单独协议的接受，即视为您对本协议全部的接受。</p>
+	                    <p class="lead">一、【协议的范围】</p>
+	                    <p class="detail-container-list">1.1本协议是您与腾讯之间关于用户使用腾讯相关服务所订立的协议。“腾讯”是指腾讯公司及其相关服务可能存在的运营关联单位。
+	                        “用户”是指使用腾讯相关服务的使用人，在本协议中更多地称为“您”。</p>
+	                    <p class="detail-container-list">1.2本协议项下的服务是指腾讯向用户提供的包括但不限于即时通讯、网络媒体、互联网增值、互动娱乐、电子商务和广告等产品及服务
+	                        （以下简称“本服务”）。</p>
+	                    <p class="detail-container-list">1.3本协议内容同时包括《QQ号码规则》（链接地址：
+	                        http://zc.qq.com/chs/agreement1_chs.html）和《隐私政策》（链接地址：
+	                        http://www.qq.com/privacy.htm）,且您在使用腾讯某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，
+	                        即为本协议不可分割的组成部分，您同样应当遵守。您对前述任何业务规则、单独协议的接受，即视为您对本协议全部的接受。</p>
+	                    <p class="lead">一、【协议的范围】</p>
+	                    <p class="detail-container-list">1.1本协议是您与腾讯之间关于用户使用腾讯相关服务所订立的协议。“腾讯”是指腾讯公司及其相关服务可能存在的运营关联单位。
+	                        “用户”是指使用腾讯相关服务的使用人，在本协议中更多地称为“您”。</p>
+	                    <p class="detail-container-list">1.2本协议项下的服务是指腾讯向用户提供的包括但不限于即时通讯、网络媒体、互联网增值、互动娱乐、电子商务和广告等产品及服务
+	                        （以下简称“本服务”）。</p>
+	                    <p class="detail-container-list">1.3本协议内容同时包括《QQ号码规则》（链接地址：
+	                        http://zc.qq.com/chs/agreement1_chs.html）和《隐私政策》（链接地址：
+	                        http://www.qq.com/privacy.htm）,且您在使用腾讯某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，
+	                        即为本协议不可分割的组成部分，您同样应当遵守。您对前述任何业务规则、单独协议的接受，即视为您对本协议全部的接受。</p>
+	                    <p class="lead">一、【协议的范围】</p>
+	                    <p class="detail-container-list">1.1本协议是您与腾讯之间关于用户使用腾讯相关服务所订立的协议。“腾讯”是指腾讯公司及其相关服务可能存在的运营关联单位。
+	                        “用户”是指使用腾讯相关服务的使用人，在本协议中更多地称为“您”。</p>
+	                    <p class="detail-container-list">1.2本协议项下的服务是指腾讯向用户提供的包括但不限于即时通讯、网络媒体、互联网增值、互动娱乐、电子商务和广告等产品及服务
+	                        （以下简称“本服务”）。</p>
+	                    <p class="detail-container-list">1.3本协议内容同时包括《QQ号码规则》（链接地址：
+	                        http://zc.qq.com/chs/agreement1_chs.html）和《隐私政策》（链接地址：
+	                        http://www.qq.com/privacy.htm）,且您在使用腾讯某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，
+	                        即为本协议不可分割的组成部分，您同样应当遵守。您对前述任何业务规则、单独协议的接受，即视为您对本协议全部的接受。</p>
+	                </div>
+	            </div>
+	        </div>
+	        <!--PC右侧内容区结束-->
+	        <!--移动端内容部分开始-->
+	        <div class="sliding-screen">
+	                <!--阅读内容部分开始-->
+	                <div class="seach-read visible-xs">
+	                    <div class=" clearfix">
+	                         <h5 class="all-h5 float-left">从新闻拼图读懂全文</h5>
+	                    </div>
+	                    <div class="clearfix">
+	                        <p class="read-time">
+	                            2017-06-27&nbsp;10:15:34
+	                        </p>
+	                        <p class="search-back-list ">
+	                            <button type="button" class="back-list" onclick="window.location.href='AllList.html'">返回列表</button>
+	                            <i class="icon-double-angle-left"></i>
+	                        </p>
+	                        <!--<p class="read-font-size">-->
+	                            <!--<i class="font-size-big">A</i>-->
+	                            <!--<i class="font-size-small">A</i>-->
+	                        <!--</p>-->
+	                    </div>
+	                    <div class="read-main-content">
+	                        <p class="text-indent">
+	                            本周，在传说中的区域性暴雨降临之前，另一场“雨中曲”早已奏响——有关全面从严治党、正风反腐的新闻接踵而至，在舆论场激起一层又一层涟漪。周一，
+	                            中央纪委通报外逃15年的“百名红通人员”袁梅主动回国投案；周三，十八届中央第十二轮巡视反馈情况全部公布，山西省原副省长任润厚涉嫌受贿、贪污、
+	                            巨额财产来源不明违法所得没收申请案一审开庭，国务院国资委、央企5月份查处违反中央八项规定精神问题60起、处理107人，
+	                            世纪金源集团董事局主席黄如论因涉嫌行贿犯罪被免去福建省政协常委职务、撤销省政协委员资格。
+	                        </p>
+	                        <div class="read-main-content-img">
+	                            <img src="img/1.jpg" alt=""/>
+	                        </div>
+	                        <p class="text-indent">
+	                            本周，在传说中的区域性暴雨降临之前，另一场“雨中曲”早已奏响——有关全面从严治党、正风反腐的新闻接踵而至，在舆论场激起一层又一层涟漪。周一，
+	                            中央纪委通报外逃15年的“百名红通人员”袁梅主动回国投案；周三，十八届中央第十二轮巡视反馈情况全部公布，山西省原副省长任润厚涉嫌受贿、贪污、
+	                            巨额财产来源不明违法所得没收申请案一审开庭，国务院国资委、央企5月份查处违反中央八项规定精神问题60起、处理107人，
+	                            世纪金源集团董事局主席黄如论因涉嫌行贿犯罪被免去福建省政协常委职务、撤销省政协委员资格。
+	                        </p>
+	                </div>
+	                <!--阅读内容部分结束-->
+	            </div>
+	
+	        </div>
+	        <!--移动端内容部分结束-->
+		</div>
+	</div>	
+</div>
+<!--container结束-->
+<!--footer开始-->
+<div class="footer">
+    <div class="container"> Copyright@2008-2017    版权所有</div>
+</div>
+<!--footer结束-->
+</body>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/zui.js"></script>
+<script src="js/common.js"></script>
+</html>
